@@ -2,6 +2,8 @@
 
 A modern, responsive personal portfolio built to showcase my experience as a Full-Stack Software Engineer, my academic background in Artificial Intelligence, and the projects, skills, and work that define my profile.
 
+Live demo: https://mnaim.vercel.app/
+
 ## Overview
 
 This portfolio is designed as a clean, data-driven website with a strong visual hierarchy and a balanced light/dark theme system. It highlights:
