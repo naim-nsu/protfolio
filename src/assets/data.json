@@ -1,0 +1,187 @@
+{
+  "hero-description": "Full-Stack Software Engineer with 4+ years of experience delivering end-to-end web applications. Currently based in Germany and open to full-stack engineering opportunities.",
+  "hero-core-skills": ["Node.js", ".NET", "Angular", "React", "Azure DevOps"],
+
+  "about-me-description": [
+    "I am Mohammad Naim, a Full-Stack Software Engineer with 4+ years of industry experience building scalable web platforms across e-commerce, logistics, and healthcare domains. I focus on designing clean, maintainable architectures and delivering performance-driven solutions.",
+    "I am currently completing an M.Sc. in Artificial Intelligence at FAU Erlangen-Nürnberg while working at Siemens Healthineers in Erlangen. My work spans scalable backend systems using Node.js and .NET, modern frontend development with Angular and React, and CI/CD automation using cloud-native engineering practices.",
+    "I’m particularly interested in building reliable systems that bridge software engineering and AI to solve real-world problems."
+  ],
+
+  "about-me-cards": [
+    { "icon": "Gem", "title": "4+", "description": "Years of experience" },
+    {
+      "icon": "GraduationCap",
+      "title": "M.Sc.",
+      "description": "Artificial Intelligence"
+    },
+    {
+      "icon": "Languages",
+      "title": "English",
+      "description": "C1 - Full Professional Proficiency"
+    },
+    {
+      "icon": "Languages",
+      "title": "German",
+      "description": "A2 - Limited Proficiency, Actively Improving"
+    }
+  ],
+
+  "skills": {
+    "Frontend": [
+      "Angular",
+      "React.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Karma",
+      "Jasmine"
+    ],
+    "Backend & Databases": [
+      "Node.js",
+      "Express.js",
+      ".NET",
+      "C#",
+      "REST APIs",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "Cloud & DevOps": [
+      "Azure",
+      "AWS S3",
+      "DigitalOcean",
+      "Azure DevOps",
+      "GitHub Actions",
+      "Terraform",
+      "Docker",
+      "CI/CD"
+    ],
+    "Misc.": ["Agile/Scrum", "Git", "Python", "PyTorch"]
+  },
+
+  "experience_timeline": [
+    {
+      "year": "10/2023 - Present",
+      "title": "Working Student - Software Engineer",
+      "org": "Siemens Healthineers AG · Erlangen, Germany",
+      "desc": "Developed a web-based platforms for automated post-processing and AI based analysis of medical imaging. Worked with large-scale DICOM datasets across multiple modalities. Delivered end-to-end features from backend APIs to frontend, built CI/CD pipelines in Azure DevOps, and collaborated in Agile activities and code reviews.",
+      "type": "work",
+      "current": true,
+      "techs": [
+        "Angular",
+        "TypeScript",
+        "C#",
+        ".NET",
+        "Azure DevOps",
+        "Terraform"
+      ]
+    },
+    {
+      "year": "10/2022 - 09/2026",
+      "title": "M.Sc. in Artificial Intelligence",
+      "org": "Friedrich-Alexander University · Erlangen, Germany",
+      "desc": "This graduate program focuses on modern AI foundations and applications, covering symbolic AI, machine learning, deep learning, and AI systems. It combines theoretical rigor with hands-on projects, preparing graduates for both industry and research careers.",
+      "type": "edu",
+      "current": true,
+      "techs": [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Advanced Data Engineering",
+        "PyTorch"
+      ]
+    },
+    {
+      "year": "10/2020 - 09/2022",
+      "title": "Full-Stack Software Engineer",
+      "org": "Accept Global Limited · Dhaka, Bangladesh",
+      "desc": "Designed and built scalable B2B/B2C e-commerce platforms handling 5M+ products. Optimized REST APIs and web applications for high traffic and secure payment workflows. Developed logistics systems that reduced processing time by 80%, mentored junior developers, and delivered 10+ projects on schedule within Agile teams.",
+      "type": "work",
+      "current": false,
+      "techs": [
+        "Node.js",
+        "React.js",
+        "Flutter",
+        "MongoDB",
+        "REST APIs",
+        "DigitalOcean",
+        "AWS S3"
+      ]
+    },
+    {
+      "year": "09/2015 - 08/2020",
+      "title": "B.Sc. in Computer Science & Engineering",
+      "org": "North South University · Dhaka, Bangladesh",
+      "desc": "Completed a B.Sc. in Computer Science and Engineering from North South University, building a strong foundation in software development, algorithms, and system design. Gained hands-on experience with modern tools and technologies, solving real-world problems and developing scalable applications, with a focus on continuous learning and innovation.",
+      "type": "edu",
+      "current": false,
+      "techs": [
+        "Data Structures & Algorithms",
+        "OOP",
+        "Probability & Statistics",
+        "Artificial Intelligence",
+        "Software Engineering",
+        "Database Management Systems",
+        "Compiler Design",
+        "Theory of Computation"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "E-Commerce Platform (MERN Stack)",
+      "desc": "Built a scalable online marketplace with payment integration, role-based access, and inventory management for high-traffic usage.",
+      "tags": ["Node.js", "React", "MongoDB", "REST APIs"],
+      "accent": "before:bg-blue-500"
+    },
+    {
+      "title": "Logistics Mobile App (Flutter)",
+      "desc": "Developed a sorting and delivery mobile app used by 30+ logistics staff across international operations.",
+      "tags": ["Flutter", "Node.js", "MongoDB"],
+      "accent": "before:bg-emerald-500"
+    },
+    {
+      "title": "Automated Data Pipeline",
+      "desc": "Created a Python ETL pipeline combining DWD weather and GENESIS insurance datasets for analytical insights.",
+      "tags": ["Python", "ETL", "SQLite", "Data Analysis"],
+      "url": "https://github.com/naim-nsu/ETL-Pipeline"
+    },
+    {
+      "title": "School Management System",
+      "desc": "Built a multi-tenant school management platform with role-based dashboards and secure access control.",
+      "tags": ["PHP", "CodeIgniter", "MySQL"]
+    }
+  ],
+
+  "navLinks": [
+    { "label": "About", "href": "#about" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+
+  "contact": {
+    "email": "mdnaim.nsu@gmail.com",
+    "phone": "+4915733668617",
+    "location": "Erlangen, Germany",
+    "linkedin": "https://linkedin.com/in/aynaim",
+    "github": "https://github.com/naim-nsu"
+  },
+
+  "publications": [
+    {
+      "title": "Spatio-temporal estimation of basic and effective reproduction number of COVID-19 and post-lockdown transmissibility in Bangladesh",
+      "year": "2020",
+      "url": "https://doi.org/10.1007/s41324-021-00409-2"
+    },
+    {
+      "title": "Factors Affecting Small-Scale Fishers Adaptation toward the Impacts of Climate Change: Reflections from South Eastern Bangladeshi Fishers",
+      "year": "2020",
+      "url": "http://www.rericjournal.ait.ac.th/index.php/reric/article/view/2608"
+    }
+  ]
+}

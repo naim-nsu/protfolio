@@ -1,1 +1,159 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Dark variant mapping */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Map unified UI tokens to Tailwind utilities */
+@theme inline {
+  --font-sora: "Sora", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Global Colors */
+  --color-accent: var(--app-accent);
+  --color-background: var(--app-bg);
+  --color-surface: var(--app-surface);
+  --color-foreground: var(--app-fg);
+  --color-muted: var(--app-muted);
+  --color-hint: var(--app-hint);
+  --color-fade: var(--app-fade);
+  --color-border: var(--app-border);
+  --color-border-strong: var(--app-border-strong);
+  --color-inverted: var(--app-inverted);
+
+  /* Semantic Badges */
+  --color-badge-edu-bg: var(--app-badge-edu-bg);
+  --color-badge-edu-text: var(--app-badge-edu-text);
+  --color-badge-work-bg: var(--app-badge-work-bg);
+  --color-badge-work-text: var(--app-badge-work-text);
+}
+
+@layer base {
+  /* Default / Light Mode Tokens */
+  :root,
+  [data-theme="light"] {
+    --app-accent: #1a56db;
+
+    --app-bg: hsl(0, 0%, 97%);
+    --app-surface: hsl(0, 1%, 98%);
+    --app-inverted: #18181b;
+
+    --app-fg: #18181b;
+    --app-muted: #71717a;
+    --app-hint: #a1a1aa;
+    --app-fade: #d4d4d8;
+
+    --app-border: #f4f4f5;
+    --app-border-strong: #e4e4e7;
+
+    --app-badge-edu-bg: #eff6ff;
+    --app-badge-edu-text: #2563eb;
+    --app-badge-work-bg: #f0fdf4;
+    --app-badge-work-text: #059669;
+
+    --app-chip-shadow-short: 0 1px 2px rgb(24 24 27 / 0.28); /* darker + shorter */
+    --app-chip-shadow-long: 0 12px 28px -10px rgb(24 24 27 / 0.14); /* lighter + longer */
+  }
+
+  /* Dark Mode Tokens */
+  [data-theme="dark"] {
+    --app-accent: #60a5fa;
+
+    --app-bg: #09090b;
+    --app-surface: #18181b;
+    --app-inverted: #ffffff;
+
+    --app-fg: hsl(240, 64%, 98%);
+    --app-muted: #a1a1aa;
+    --app-hint: #71717a;
+    --app-fade: #3f3f46;
+
+    --app-border: #27272a;
+    --app-border-strong: #3f3f46;
+
+    --app-badge-edu-bg: #172554;
+    --app-badge-edu-text: #60a5fa;
+    --app-badge-work-bg: #022c22;
+    --app-badge-work-text: #34d399;
+
+    --app-chip-shadow-short: 0 1px 2px rgb(0 0 0 / 0.55); /* darker + shorter */
+    --app-chip-shadow-long: 0 14px 30px -12px rgb(255 255 255 / 0.1); /* lighter + longer */
+  }
+
+  /* Base Element Styling */
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sora);
+    transition: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm text-muted hover:text-foreground transition-colors duration-200;
+  }
+  .section-label {
+    @apply text-sm font-mono font-medium tracking-widest text-accent uppercase mb-10;
+  }
+  .chip {
+    @apply text-xs px-3 py-1 rounded-full border border-border-strong text-muted bg-surface transition-all duration-200 cursor-default;
+    box-shadow: var(--app-chip-shadow-short), var(--app-chip-shadow-long);
+  }
+  .chip:hover {
+    @apply text-foreground border-border;
+    transform: translateY(-1px);
+  }
+  .btn-primary {
+    @apply text-sm px-8 py-4 bg-inverted text-surface rounded-full font-medium transition-colors duration-200;
+    box-shadow: var(--app-chip-shadow-short), var(--app-chip-shadow-long);
+  }
+  .btn-secondary {
+    @apply text-sm px-8 py-4 border border-border text-foreground rounded-full font-medium hover:border-border-strong transition-colors duration-200;
+    box-shadow: var(--app-chip-shadow-short), var(--app-chip-shadow-long);
+  }
+  .card {
+    @apply min-w-fit max-w-3xs bg-surface border border-border-strong rounded-2xl px-8 py-6 transition-all duration-400;
+    box-shadow: var(--app-chip-shadow-short), var(--app-chip-shadow-long);
+  }
+  .timeline-dot {
+    @apply w-2.5 h-2.5 rounded-full bg-accent border-2 border-border shrink-0 mt-1.5;
+  }
+}
+
+@layer utilities {
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in {
+    animation: fadeIn 0.6s ease both;
+  }
+  .delay-100 {
+    animation-delay: 0.1s;
+  }
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+}
