@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { useEffect, useState } from "react";
 import { Footer } from "./layout/Footer";
 import { Navbar } from "./layout/Navbar";
@@ -49,6 +50,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
